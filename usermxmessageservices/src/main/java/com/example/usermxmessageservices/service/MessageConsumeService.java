@@ -33,7 +33,7 @@ public class MessageConsumeService {
     private MxRepository mxrepository;
    
 	
-	@KafkaListener(topics = "sample")
+	@KafkaListener(topics = "mtmessage")
 	public void consume(String message) {
 
 		JSONObject json = new JSONObject(message);
@@ -58,7 +58,7 @@ public class MessageConsumeService {
 	 public void sendMessage(String message){
 
 	        LOGGER.info(String.format("Message sent -> %s", message));
-	        kafkaTemplate.send("sampleone", message);
+	        kafkaTemplate.send("mxmessage", message);
 	        
 	      
 	        

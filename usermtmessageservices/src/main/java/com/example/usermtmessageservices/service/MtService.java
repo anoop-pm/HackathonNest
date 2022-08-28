@@ -55,7 +55,7 @@ public class MtService {
 	String MXMessage=null;
 	
 	
-	@KafkaListener(topics = "sampleone")
+	@KafkaListener(topics = "mxmessage")
 	public void consume(String message) {
 		JSONObject json = new JSONObject(message);
 		System.out.println(json.get("MXmessage").toString());
@@ -307,7 +307,7 @@ public ResponseObject userAccountBalance(AccountNumber user) {
 		transaction.put("SenderAccountnumber", accno);
 		transaction.put("MTMessage", mtMessage);
 		transaction.put("time", now.toString());
-		return new ProducerRecord<>("sample", accno, transaction.toString());
+		return new ProducerRecord<>("mtmessage", accno, transaction.toString());
 	}
 	
 	
