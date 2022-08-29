@@ -158,7 +158,7 @@ public ResponseObject userAccountBalance(AccountNumber user) {
 		userRepository.updatebalance(amount, user.getAccountnumber());
 		
 		response.setStatus(200);
-		response.setMessage("account ");
+		response.setMessage("account balance is : "+amount);
 		}
 		else {
 			response.setStatus(404);
@@ -263,8 +263,6 @@ public ResponseObject userAccountBalance(AccountNumber user) {
         System.out.println(m.message());
   
     
-		
-		
 	
 		Producer<String, String> producer = new KafkaProducer<>(producers.kafkaproducer());
 		try {
