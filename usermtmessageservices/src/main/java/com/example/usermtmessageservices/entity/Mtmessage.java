@@ -20,47 +20,47 @@ public class Mtmessage {
 
 	@NotEmpty
 	@Column(name = "sender", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "The application-specific sender")
 	private String sender;
 	
 	@NotEmpty
 	@Column(name = "receiver", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "The application-specific receiver")
 	private String receiver;
 	
 	@NotEmpty
 	@Column(name = "currency", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "The application-specific currency Name")
 	private String currency;
 	
 	@NotEmpty
 	@Column(name = "amount", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "The application-specific amount")
 	private String amount;
 	
 	@NotEmpty
 	@Column(name = "refernce", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "The application-specific reference")
 	private String refernce;
 	
 	@NotEmpty
 	@Column(name = "accountnumber", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "The application-specific accountnumber")
 	private String accountnumber;
 	
 	@NotEmpty
 	@Column(name = "receiveraccountnumber", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "The application-specific receiveraccountnumber")
 	private String receiverAccountNo;
 	
 	@NotEmpty
 	@Column(name = "bankname", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "The application-specific bank Name")
 	private String bankname;
 	
 	@NotEmpty
 	@Column(name = "address", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "The application-specific bank address")
 	private String address;
 	
 

@@ -131,6 +131,21 @@ public class TestRest {
 		assertThat(abcd).isNotNull();
 	}
 	
+	@Test
+	@Order(8)
+	public void receiverbankService() {
+		ReceiverBank p = new ReceiverBank();
+		p.setId(1L);
+		p.setAccountbalance(0);
+		p.setAccountnumber("11111");
+		p.setBankName("sbi");
+		p.setIfsccode("sbinss");
+		p.setReceivername("anand");
+		Object abcd =service.createReceiver(p);
+		// then - verify the output
+		assertThat(abcd).isNotNull();
+	}
+	
 
 
 }

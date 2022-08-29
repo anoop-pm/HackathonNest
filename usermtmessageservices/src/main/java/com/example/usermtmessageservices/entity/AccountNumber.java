@@ -9,7 +9,7 @@ public class AccountNumber {
 	
 	@NotEmpty
 	@Column(name = "accountnumber", length = 20)
-	@ApiModelProperty(notes = "The application-specific User Name")
+	@ApiModelProperty(notes = "accountnumber")
 	private String accountnumber;
 
 	public String getAccountnumber() {

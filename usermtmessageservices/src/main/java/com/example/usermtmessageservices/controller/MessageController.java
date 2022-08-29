@@ -52,18 +52,18 @@ public class MessageController {
 	
 	
 	@PutMapping("/deposit")
-	@ApiOperation(value = "Register A User")
+	@ApiOperation(value = "Deposit to user account")
 	public ResponseEntity<ResponseObject> deposit(
-			@ApiParam(value = "Register User object store in database table", required = true) @Valid @RequestBody User user) {
+			@ApiParam(value = "Deposit to user account", required = true) @Valid @RequestBody User user) {
 		ResponseObject messagenew = service.deposit(user);
 		return new ResponseEntity<ResponseObject>(messagenew, HttpStatus.CREATED);
 	}
 	
 	
 	@GetMapping("/userbalance")
-	@ApiOperation(value = "Register A User")
+	@ApiOperation(value = "Check user account balance")
 	public ResponseEntity<ResponseObject> userBalance(
-			@ApiParam(value = "Register User object store in database table", required = true) @Valid @RequestBody AccountNumber user) {
+			@ApiParam(value = "Check user account balance", required = true) @Valid @RequestBody AccountNumber user) {
 		ResponseObject messagenew = service.userAccountBalance(user);
 		return new ResponseEntity<ResponseObject>(messagenew, HttpStatus.CREATED);
 	}
@@ -79,9 +79,9 @@ public class MessageController {
 	
 	
 	@PostMapping("/transfermessage")
-	@ApiOperation(value = "Register A User")
+	@ApiOperation(value = "Transfer amount")
 	public ResponseEntity<ResponseMXMessage> CreateMessage(
-			@ApiParam(value = "Convert Message To Mt103", required = true) @Valid @RequestBody Mtmessage message) {
+			@ApiParam(value = "Convert Message To Mt103 and send then take response from mxservice", required = true) @Valid @RequestBody Mtmessage message) {
 
 		ResponseMXMessage messagenew = service.transfermessage(message);
 		return new ResponseEntity<ResponseMXMessage>(messagenew, HttpStatus.ACCEPTED);

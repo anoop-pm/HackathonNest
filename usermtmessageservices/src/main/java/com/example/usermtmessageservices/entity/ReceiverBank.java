@@ -33,17 +33,17 @@ public class ReceiverBank {
 	
 	@NotEmpty
 	@Column(name = "bankname", length = 20)
-	@ApiModelProperty(notes = "The application-specific Account Number")
+	@ApiModelProperty(notes = "The application-specific bankname")
 	private String bankName;
 	
 	@NotEmpty
 	@Column(name = "ifsccode", length = 20)
-	@ApiModelProperty(notes = "The application-specific Account Number")
+	@ApiModelProperty(notes = "The application-specific ifsc code")
 	private String ifsccode;
 	
 	
 	@Column(name = "accountbalance", length = 20)
-	@ApiModelProperty(notes = "The application-specific Account Number")
+	@ApiModelProperty(notes = "The application-specific Account balance")
 	private int accountbalance;
 
 
