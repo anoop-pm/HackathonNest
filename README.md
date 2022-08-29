@@ -1,6 +1,6 @@
 # HackathonNest
 
-This project for transfer money through mt103 message and convert int MX message
+This project for transfer money through mt103 message and convert into MX message
 ## Architecture
 ![My First Board (3)](https://user-images.githubusercontent.com/62478714/187073017-0f4008c2-c268-4234-b4de-c279db28baa4.jpg)
 
