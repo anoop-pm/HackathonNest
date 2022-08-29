@@ -7,7 +7,7 @@ This project for transfer money through mt103 message and convert int MX message
 ## Database
 Mysql Db name: mtbank
 
-## kafka Topic Crea
+## kafka Topic Create
 
 kafka-topics.sh --create --topic mtmessage --bootstrap-server localhost:9092
 
