@@ -224,7 +224,7 @@ public ResponseObject userAccountBalance(AccountNumber user) {
         /*
          * Start adding the message's fields in correct order
          */
-        m.addField(new Field20("REFERENCE"));
+        m.addField(new Field20("ENF112344"));
         m.addField(new Field23B(message.getRefernce()));
 
         /*
